@@ -1,21 +1,27 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, SafeAreaView, Image } from 'react-native';
+import { StyleSheet, View, FlatList } from 'react-native';
+import Coinitem from './src/components/coinitems';
+import cryptocurrencies from './assets/data/cryptocurrencies.json'
 
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <Text numberOfLines={1} onPress={() => console.log('Hello user')}>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </SafeAreaView>
+    <View style={styles.container}>
+     <FlatList 
+     data = {cryptocurrencies}
+     renderItem={({item}) => <Coinitem marketCoin = {item}/>}
+     keyExtractor={item => item.id}
+     />
+      <StatusBar style="light" />
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#121212',
+    paddingTop : 50,
+    paddingLeft : 10
   },
 });
