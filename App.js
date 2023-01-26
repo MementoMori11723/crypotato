@@ -1,17 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, FlatList } from 'react-native';
-import Coinitem from './src/components/coinitems';
-import cryptocurrencies from './assets/data/cryptocurrencies.json'
+import { StyleSheet, View, } from 'react-native';
+import Home from './src/Screens/Home';
+import CoinDetailedScreens from './src/Screens/coinDetailedScreens';
 
 
 export default function App() {
   return (
     <View style={styles.container}>
-     <FlatList 
-     data = {cryptocurrencies}
-     renderItem={({item}) => <Coinitem marketCoin = {item}/>}
-     keyExtractor={item => item.id}
-     />
+      {/*<CoinDetailedScreens/>*/}
+      <Home/>
       <StatusBar style="light" />
     </View>
   );

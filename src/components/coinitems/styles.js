@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     coincountainer:{
       flexDirection:'row',
       borderBottomWidth: StyleSheet.hairlineWidth,
-      borderBottomColor: 'gray',
+      borderBottomColor: '#454545',
       padding: 15,
     },
     rank:{
