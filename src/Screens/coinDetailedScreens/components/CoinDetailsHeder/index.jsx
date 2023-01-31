@@ -15,8 +15,9 @@ const CoinDetailsHeader =  (props) =>{
                     <Text style={{color:'white', fontSize:16, fontWeight:'bold'}}>#{ marketCapRank }</Text>
                 </View>
             </View>
-            <EvilIcons name="user" size={30} color="white" />
+            <EvilIcons name="user" size={35} color="white" />
         </View>
+
     );
 };
 

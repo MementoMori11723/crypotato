@@ -40,8 +40,8 @@ const coinitem = ({ marketCoin }) => {
          </View>
        </View>
        <View style={{marginLeft:'auto', alignItem : 'flex-end'}}>
-        <Text style = {styles.title}>{current_price}</Text>
-        <Text style = {{color : 'white'}}>MGap {normarcap(market_cap)}</Text>
+        <Text style = {styles.title}>$ {current_price}</Text>
+        <Text style = {{color : 'white'}}>MCap {normarcap(market_cap)}</Text>
        </View>
       </View>
     );
