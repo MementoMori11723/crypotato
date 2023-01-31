@@ -1,4 +1,4 @@
-import { React } from 'react';
+import { React, useState } from 'react';
 import { Text, View, TextInput } from 'react-native';
 import Coin from '../../../assets/data/crypto.json';
 import CoinDetailsHeader from './components/CoinDetailsHeder';
@@ -6,12 +6,14 @@ import styles from './styles';
 import { AntDesign } from '@expo/vector-icons';
 import Charts from './components/charts';
 
+
 const CoinDetailedScreens = () => {
   const { image:{ small }, symbol, market_data:{ market_cap_rank, current_price, price_change_percentage_24h }, name, prices } = Coin;
 
-  const percentageColor = price_change_percentage_24h < 0 ? '#ea3943' : '#16c784'
+  const percentageColor = price_change_percentage_24h < 0 ? '#ea3943' : '#16c784';
 
-  const percentageSymbol = price_change_percentage_24h < 0 ? 'caretdown' : 'caretup'
+  const percentageSymbol = price_change_percentage_24h < 0 ? 'caretdown' : 'caretup';
+
 
   return (
     <View style={styles.Totalview}>
