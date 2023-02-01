@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, View, Image } from 'react-native';
-import { Ionicons, EvilIcons } from '@expo/vector-icons';
+import { Ionicons, AntDesign } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import styles from './styles'; 
 
@@ -17,7 +17,7 @@ const CoinDetailsHeader =  (props) =>{
                     <Text style={{color:'white', fontSize:16, fontWeight:'bold'}}>#{ marketCapRank }</Text>
                 </View>
             </View>
-            <EvilIcons name="user" size={35} color="white" />
+            <AntDesign name="infocirlceo" size={25} color="white" />
         </View>
 
     );

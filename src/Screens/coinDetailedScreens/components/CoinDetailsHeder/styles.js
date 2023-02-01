@@ -5,7 +5,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row', 
         paddingHorizontal: 5, 
         alignItems: 'center',
-        justifyContent:'space-between' 
+        justifyContent:'space-between',
+        paddingBottom:20 
     },
     ticker:{
         flexDirection:'row', 

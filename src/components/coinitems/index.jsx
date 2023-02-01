@@ -38,8 +38,8 @@ const coinitem = ({ marketCoin }) => {
               <Text style = {styles.rank}>{market_cap_rank}</Text>
             </View>
            <Text style = {styles.subText}>{symbol.toUpperCase()}</Text>
-           <AntDesign name={percentageSymbol} size={12} color={percentageColor} style = {{paddingRight:5}}/>
-           <Text style = {{color:percentageColor, marginRight: 10}}>{price_change_percentage_24h.toFixed(2)}%</Text>
+           <AntDesign name={percentageSymbol} size={12} color={percentageColor} style = {{paddingRight:5, alignSelf:'center'}}/>
+           <Text style = {{color:percentageColor, marginRight: 10, alignSelf:'center'}}>{price_change_percentage_24h.toFixed(2)}%</Text>
          </View>
        </View>
        <View style={{marginLeft:'auto', alignItem : 'flex-end'}}>
